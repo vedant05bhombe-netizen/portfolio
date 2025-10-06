@@ -1,0 +1,397 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.paragraph {
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.paragraph p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 1.8;
+}
+.cardx {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 2rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.cardx > div {
+  background: #1a1a2e;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid #2a2a3e;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardx > div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
+  border-color: #161b22;
+}
+
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  background: linear-gradient(135deg, #373a49 0%, #161b22 100%);
+}
+
+
+.card-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.card-content p {
+  color: #b4b4c5;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tags span {
+  background: rgba(102, 126, 234, 0.2);
+  color: #a5b4fc;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+/* Buttons */
+.project-btn,
+.project-btn2 {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 0.75rem;
+}
+
+.project-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.project-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.project-btn2 {
+  background: transparent;
+  color: #a5b4fc;
+  border: 2px solid #667eea;
+}
+
+.project-btn2:hover {
+  background: rgba(102, 126, 234, 0.1);
+  border-color: #a5b4fc;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cardx {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .paragraph {
+    padding: 2rem 1.5rem;
+  }
+
+  .paragraph p {
+    font-size: 1rem;
+  }
+
+  .cardx {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardx {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .card-content {
+    padding: 1.5rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .project-btn,
+  .project-btn2 {
+    font-size: 0.9rem;
+    padding: 0.65rem 1.2rem;
+  }
+}
+.root{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+}
+.menu{
+  height: 2rem;
+  width: 2rem;
+}
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: white;
+  display: flex;
+  flex-direction: column; /* make vertical */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+.burger .na1 {
+  display: flex;
+  flex-direction: column; /* stack the links */
+  align-items: center;
+  gap: 1.5rem; /* spacing between links */
+}
+
+.burger .na1 label {
+  font-size: 1.5rem;
+  color: white;
+}
+.title{
+  display: flex;
+}
+/* Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.filters{
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.filter{
+  width: 4rem;
+   background: transparent;
+}
+/* Desktop Navbar */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-item:hover {
+  color: #1e40af;
+}
+
+.nav-item#active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1e40af;
+  border-radius: 2px;
+}
+
+/* Hamburger icon */
+.menu {
+  display: none;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+}
+
+.menu:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 1000;
+  }
+
+  .burger .na1 a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .burger .na1 a:hover {
+    color: #3b82f6;
+  }
+}
+ }
+  .about{
+    display: flex;
+    justify-items: center;
+    padding: 1.3rem;
+    gap: 1.9rem;
+  }
+.About{
+  height: 2rem;
+  width: 2rem;
+  padding-top: 7px;
+
+
+  }
+  .home{
+    display: flex;
+    justify-items: center;
+    padding: 1.3rem;
+    gap: 1.9rem;
+  }
+.Home{
+  height: 2rem;
+  width: 2rem;
+  padding-top: 7px;
+
+
+  }
+  .project{
+    display: flex;
+    justify-items: center;
+    padding: 1.3rem;
+    gap: 1rem;
+  }
+.Project{
+  height: 2rem;
+  width: 2rem;
+  padding-top: 7px;
+
+
+  }
+  .contact{
+    display: flex;
+    justify-items: center;
+    padding: 1.3rem;
+    gap: 1rem;
+  }
+.Contact{
+  height: 2rem;
+  width: 2rem;
+  padding-top: 7px;
+
+
+  }
+
+.pxx{
+ position: absolute;
+ top: 7rem;
+ right: 1rem ;
+ cursor: pointer;
+
+ 
+}
+.px{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.px:hover{
+  transform: scaleX(1.03);
+ 
+}.pxx:hover{
+  transform: scale(1.1);
+}
