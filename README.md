@@ -1,16 +1,45 @@
-# React + Vite
+#  Vedant's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website — a space where I showcase my projects, skills, and journey as a developer.
 
-Currently, two official plugins are available:
+##  About Me
+I'm **Vedant**, a passionate developer who loves building clean, functional, and creative web experiences.  
+I enjoy working on both **frontend** and **backend** projects, exploring modern tools and frameworks to bring ideas to life.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Tech Stack
+- **Frontend:** React.js, HTML5, CSS3, JavaScript, Vite  
+- **Styling:** Tailwind CSS / CSS Modules  
+- **Hosting:** Netlify /   
 
-## React Compiler
+## 💼 Features
+- Responsive and minimal UI  
+- Project showcase section  
+- About Me & Contact pages  
+- Deployed live and accessible from any device  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔗 Live Demo
+👉 [Visit My Portfolio](https://vedant05portfolio.netlify.app/)
 
-## Expanding the ESLint configuration
+## 🛠️ Installation & Setup
+If you want to run it locally:
+```bash
+# Clone this repository
+git clone https://github.com/yourusername/portfolio.git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Navigate to the project directory
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+
+
+##Contact
+
+ Email: vedant05@email.com
+
+ LinkedIn: linkedin.com/in/vedant-bhombe-01a865290/
+
+ GitHub: github.com/vedant05bhombe-netizen
